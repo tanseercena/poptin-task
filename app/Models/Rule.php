@@ -18,7 +18,7 @@ class Rule extends Model
 
     public function getScriptAttribute()
     {
-        return '&lt;script src="'.config("app.url").'/js/alert-embed.js?id=123"&gt;&lt;/script&gt;';
+        return '&lt;script src="'.config("app.url").'/js/alert-embed.js?id='.$this->id.'"&gt;&lt;/script&gt;';
     }
 
     public function conditions()

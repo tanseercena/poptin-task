@@ -2052,21 +2052,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "RulesList",
   mounted: function mounted() {
@@ -2085,7 +2070,7 @@ __webpack_require__.r(__webpack_exports__);
       return this.$store.getters.getAllRules;
     },
     app_url: function app_url() {
-      return "http://localhost";
+      return "http://127.0.0.1:8000";
     }
   }
 });
@@ -59627,7 +59612,7 @@ var render = function() {
                       "p",
                       {
                         key: c,
-                        staticClass: "text-gray-900 whitespace-no-wrap"
+                        staticClass: "text-gray-900 whitespace-no-wrap border-b"
                       },
                       [
                         _vm._v(
@@ -59727,9 +59712,7 @@ var render = function() {
             }),
             0
           )
-        ]),
-        _vm._v(" "),
-        _vm._m(1)
+        ])
       ]
     )
   ])
@@ -59787,45 +59770,6 @@ var staticRenderFns = [
         )
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between          "
-      },
-      [
-        _c("span", { staticClass: "text-xs xs:text-sm text-gray-900" }, [
-          _vm._v(
-            "\n                        Showing 1 to 4 of 50 Entries\n                    "
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inline-flex mt-2 xs:mt-0" }, [
-          _c(
-            "button",
-            {
-              staticClass:
-                "text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-l"
-            },
-            [_vm._v("\n                    Prev\n                ")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass:
-                "text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-r"
-            },
-            [_vm._v("\n                    Next\n                ")]
-          )
-        ])
-      ]
-    )
   }
 ]
 render._withStripped = true

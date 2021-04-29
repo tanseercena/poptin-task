@@ -36,7 +36,7 @@
                         </div>
                     </td>
                     <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                        <p class="text-gray-900 whitespace-no-wrap" v-for="(condition,c) in rule.conditions" :key="c">
+                        <p class="text-gray-900 whitespace-no-wrap border-b" v-for="(condition,c) in rule.conditions" :key="c">
                             {{ condition.show == 1 ? 'Show On' : 'Don\'t show on' }} ->
                             {{ condition.rule }} ->
                             {{ condition.rule_txt }}
@@ -64,22 +64,7 @@
                 </tr>
                 </tbody>
             </table>
-            <div
-                class="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between          ">
-                        <span class="text-xs xs:text-sm text-gray-900">
-                            Showing 1 to 4 of 50 Entries
-                        </span>
-                <div class="inline-flex mt-2 xs:mt-0">
-                    <button
-                        class="text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-l">
-                        Prev
-                    </button>
-                    <button
-                        class="text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-r">
-                        Next
-                    </button>
-                </div>
-            </div>
+
         </div>
     </div>
 </template>
